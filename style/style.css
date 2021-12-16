@@ -23,15 +23,12 @@ img {
 
 /* start */
 
-html,
-body {
-  height: 100%;
-  min-height: 100%;
-}
-
 body {
   background-color: var(--body-bg-color);
   color: var(--text-color);
+
+  min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +115,7 @@ button {
   width: 48px;
   height: 48px;
   background-color: var(--bg-button-color);
+  border: solid 1px var(--bg-button-color);
 }
 
 button img {
@@ -130,4 +128,45 @@ button img {
   color: var(--bg-button-color);
 }
 
-/* Right side */
+/* Right */
+
+.img_illustrative h2 {
+  opacity: 0;
+  position: absolute;
+}
+
+@media (max-width: 75rem) {
+  body main {
+    flex-direction: column;
+  }
+
+  p,
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    margin: 3.125rem auto 0 auto;
+  }
+
+  .img_illustrative {
+    margin: 0.5rem auto 2rem auto;
+  }
+}
+
+@media (max-width: 20.625rem) {
+  fieldset div {
+    display: block;
+  }
+  button {
+    width: min(90vw, 800px);
+  }
+
+  .information h3 {
+    margin-top: 2.75rem;
+  }
+
+  .img_illustrative {
+    margin: 0.1rem auto;
+  }
+}
