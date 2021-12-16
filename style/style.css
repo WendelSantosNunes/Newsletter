@@ -131,7 +131,6 @@ button img {
 
 .container_link {
   display: flex;
-  align-self: center;
 }
 
 /* Right */
@@ -151,12 +150,12 @@ button img {
     text-align: center;
   }
 
-  img {
+  .logo img {
     margin: 3.125rem auto 0 auto;
   }
 
   .img_illustrative {
-    margin: 0.5rem auto 2rem auto;
+    margin: 1.5rem auto 2rem auto;
   }
 }
 
@@ -170,9 +169,5 @@ button img {
 
   .information h3 {
     margin-top: 2.75rem;
-  }
-
-  .img_illustrative {
-    margin: 0.1rem auto;
   }
 }
