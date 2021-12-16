@@ -1,3 +1,4 @@
+/* Global */
 :root {
   --body-bg-color: #121214;
   --text-color: #e1e1e6;
@@ -17,9 +18,11 @@
 img {
   display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
-/* Estilo */
+/* start */
+
 html,
 body {
   height: 100%;
@@ -28,34 +31,30 @@ body {
 
 body {
   background-color: var(--body-bg-color);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main {
-  max-width: 90rem;
-  max-height: 48.75rem;
+.container {
+  width: min(100vw, 1440px);
+}
 
+body main {
   display: flex;
-  flex-wrap: wrap;
-
-  color: #fff;
-  font-family: 'Spartan', sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Lado esquerdo */
-
-main .information {
-  width: 45rem;
-  height: 48.75rem;
-}
+/* logo */
 
 .logo img {
   width: 24.3125rem;
   height: 5.875rem;
-  margin-top: 50px;
 }
+
+/* Texto */
 
 .information h3 {
   margin-top: 5.75rem;
@@ -85,8 +84,12 @@ main .information {
 
 /* Formulário */
 
+fieldset form {
+  width: min(90vw, 750px);
+}
+
 fieldset {
-  margin-top: 3.125rem;
+  margin: 3.125rem 0;
   color: var(--form-color);
 
   position: relative;
@@ -96,8 +99,10 @@ fieldset {
   align-items: flex-end;
 }
 
-fieldset form {
-  width: 750px;
+fieldset div {
+  width: min(90vw, 850px);
+  display: flex;
+  align-items: flex-end;
 }
 
 fieldset input {
@@ -105,7 +110,7 @@ fieldset input {
   border-left: solid 0.3125rem #04d361;
 
   margin-top: 1.0625rem;
-  width: 750px;
+  width: min(90vw, 800px);
   height: 48px;
 }
 
@@ -115,42 +120,14 @@ button {
   background-color: var(--bg-button-color);
 }
 
-.link_news {
-  display: block;
-  margin-top: 3.125rem;
+button img {
+  margin: 0 auto;
+}
 
+.link_news {
   text-decoration: none;
   font-weight: bold;
   color: var(--bg-button-color);
 }
-/* Lado direito */
 
-.img_illustrative {
-  width: 50%;
-  height: 100%;
-}
-
-.img_illustrative img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-@media (max-width: 1440px) {
-  main {
-    display: block;
-  }
-  .img_illustrative {
-    width: 100%;
-  }
-
-  .img_illustrative img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 890px) {
-  .information div {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+/* Right side */

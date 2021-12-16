@@ -14,7 +14,7 @@
     <title>Newsletter</title>
   </head>
   <body>
-    <main>
+    <main class="container">
       <section class="information">
         <div>
           <figure class="logo">
@@ -34,16 +34,18 @@
         <fieldset>
           <form action="#" id="newsletter">
             <label for="e-mail">Insira seu e-mail:</label>
-            <input
-              type="email"
-              id="e-mail"
-              placeholder="oi@rocketseat.com"
-              required
-            />
+            <div>
+              <input
+                type="email"
+                id="e-mail"
+                placeholder="oi@rocketseat.com"
+                required
+              />
+              <button form="newsletter">
+                <img src="/img/send.svg" alt="" />
+              </button>
+            </div>
           </form>
-          <button form="newsletter">
-            <img src="/img/send.svg" alt="" />
-          </button>
         </fieldset>
 
         <a
