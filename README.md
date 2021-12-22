@@ -34,7 +34,7 @@ E esse desafio pretende aprimora os conhecimentos adquirido durante os módulos:
 
 ---
 
-## :earth_americas: **Desafio**
+## :ringed_planet: **Desafio**
 
 ### Requisitos para o desafio:
 
