@@ -36,7 +36,7 @@ E esse desafio pretende aprimora os conhecimentos adquirido durante os módulos:
 
 ## :ringed_planet: **Desafio**
 
-### Requisitos para o desafio:
+### Sobre o desafio:
 
 - Criar uma página que contenha um formulário para que o usuário possa inserir o e-mail.
 - Ter um botão para o usuário clicar após inserir o e-mail.
