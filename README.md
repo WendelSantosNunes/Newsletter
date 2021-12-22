@@ -34,7 +34,7 @@ E esse desafio pretende aprimora os conhecimentos adquirido durante os módulos:
 
 ---
 
-## 🪐 **Desafio**
+## :earth_americas: **Desafio**
 
 ### Requisitos para o desafio:
 
